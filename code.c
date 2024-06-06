@@ -6,12 +6,7 @@ int main(void)
 
 
 
-
-
-
-
-	printf("test code1\n);
-	printf("test code2\n);
+	printf("删库跑路");
 	return 0;
 
 }

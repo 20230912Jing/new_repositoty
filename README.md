@@ -27,7 +27,9 @@
 
     *不仅可以管理代码存储，还便于多人协作开发
 
-![]([![Snipaste-2024-06-10-07-54-32.jpg](https://i.postimg.cc/Gh8fwrtk/Snipaste-2024-06-10-07-54-32.jpg)](https://postimg.cc/HVmzXqQx))
+[![Snipaste-2024-06-10-07-54-32.jpg](https://i.postimg.cc/vTrFjNPf/Snipaste-2024-06-10-07-54-32.jpg)](https://postimg.cc/FkHBkDXH)
+
+
 
 
 

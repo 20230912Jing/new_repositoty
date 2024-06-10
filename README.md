@@ -27,14 +27,79 @@
 
     *不仅可以管理代码存储，还便于多人协作开发
 
-[![Snipaste-2024-06-10-07-54-32.jpg](https://i.postimg.cc/vTrFjNPf/Snipaste-2024-06-10-07-54-32.jpg)](https://postimg.cc/FkHBkDXH)
+## 仓库内容
 
+   Code，资源存储，代码资源，二进制，项目管理脚本，许可证等等
 
+   issues，使用时遇到的bug或进行提交，等待反馈
 
+   README，使用markdown语言编写，工程自述文件，开发进度，版本更新，使用介绍等等
 
+   LICENSE 许可证：GPL2.0，3.0，Apahce 2.0，Mit，这些许可证，给使用者最大的使用权限以及最小的限制
 
+## Git软件，分布式版本控制系统
 
-Markdown，文本修饰语言，用特殊符号修饰正文效果<br>
+   仓库管理软件，使用git管理私人代码或者企业代码
+
+## 设备认证
+   
+   1.如何让网站的账户与设备绑定，后续完成代码的管理，上传下载
+```bash
+	git init //创建本地仓库  *后续对仓库的操作，都在仓库位置(master)
+
+	git config --list //查看git的配置文件
+
+	git config --global user.email "邮箱"
+
+	git config --global user.name “用户名"  SSH远程访问
+
+	ssh-keygen -t rsa -C "注册邮箱" //创建本地密文
+
+ 	*去对应的目录查找密文文件
+
+		rsa.pub 复制密文.粘贴 settings -> SSH key and GPG -> new ssh key -> 粘贴
+
+		ssh -T git@github.com //测试关联是否成功
+```
+
+   2.为目标仓库起别名，定位目标仓库，后续上传
+```bash
+	git remote add origin "ssh地址" //为ssh仓库地址创建别名为origin
+
+	git remote remove origin //删除origin别名
+
+	git remote add origin "ssh地址" //为ssh仓库地址创建别名为origin
+```
+
+## 本地设备与云端仓库的交互逻辑
+
+## 代码更新的依赖关系被破坏
+
+   本地内容比云端新，完成更新替换，但是如果直接修改云端内容，导致，本地内容无法再次修改
+
+   先拉取git pull 云端内容 与本地内容合并或操作，而后再次推即可
+
+```bash
+	git pull --rebase origin master
+
+	git rebase --skip "忽略本地内容 保留云端内容"
+
+	git rebase --about "忽略新版 此时还不能上传"
+
+	git rebase --continue "版本合并，解决冲突后可以直接上传"
+```
+
+## 下载开源代码
+
+```bash
+	git clone "https仓库地址" #下载开源项目code资源
+```
+
+## 分支Branch
+
+   关于分支的相关命令，创建分支、选择分支、合并分支等等
+
+## Markdown，文本修饰语言，用特殊符号修饰正文效果<br>
 
 ## 标题修饰符\#
 

@@ -79,6 +79,24 @@
 
 ![](https://i.postimg.cc/vHKTGVyQ/3.jpg)
 
+```bash
+	git add code.c #添加内容
+
+	#将缓冲区数据提交到本地仓库
+
+	git commit #提交到本地仓库
+
+	git commit -m "备注信息" #生成提交记录
+
+	git push origin master #将本地仓库内容推到云端仓库
+
+	git status #查看状态
+
+	git rm code.c #删除本地文件以及仓库中文件
+
+	git restore code.c #复位误删除文件（仓库存在）
+```
+
 ## 代码更新的依赖关系被破坏
 
    本地内容比云端新，完成更新替换，但是如果直接修改云端内容，导致，本地内容无法再次修改
